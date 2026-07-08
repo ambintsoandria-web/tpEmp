@@ -42,6 +42,3 @@ Créer un document Markdown nommé `comprehension.md` (à la racine du dépôt) 
 - Le lien du dépôt git.
 - Le fichier `comprehension.md`.
 - Les pages du projet intégrant le thème choisi.
-
-
-mkgahiphioguifyictujxtyxtuyxcicyilc
