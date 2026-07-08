@@ -108,20 +108,24 @@ CREATE OR REPLACE VIEW current_dept_emp AS
         ON d.emp_no=l.emp_no AND d.from_date=l.from_date AND l.to_date = d.to_date;
 
 flush /*!50503 binary */ logs;
-
 SELECT 'LOADING departments' as 'INFO';
-source load_departments.dump ;
-SELECT 'LOADING employees' as 'INFO';
-source load_employees.dump ;
-SELECT 'LOADING dept_emp' as 'INFO';
-source load_dept_emp.dump ;
-SELECT 'LOADING dept_manager' as 'INFO';
-source load_dept_manager.dump ;
-SELECT 'LOADING titles' as 'INFO';
-source load_titles.dump ;
-SELECT 'LOADING salaries' as 'INFO';
-source load_salaries1.dump ;
-source load_salaries2.dump ;
-source load_salaries3.dump ;
+source /opt/lampp/htdocs/test_db/load_departments.dump;
 
-source show_elapsed.sql ;
+SELECT 'LOADING employees' as 'INFO';
+source /opt/lampp/htdocs/test_db/load_employees.dump;
+
+SELECT 'LOADING dept_emp' as 'INFO';
+source /opt/lampp/htdocs/test_db/load_dept_emp.dump;
+
+SELECT 'LOADING dept_manager' as 'INFO';
+source /opt/lampp/htdocs/test_db/load_dept_manager.dump;
+
+SELECT 'LOADING titles' as 'INFO';
+source /opt/lampp/htdocs/test_db/load_titles.dump;
+
+SELECT 'LOADING salaries' as 'INFO';
+source /opt/lampp/htdocs/test_db/load_salaries1.dump;
+source /opt/lampp/htdocs/test_db/load_salaries2.dump;
+source /opt/lampp/htdocs/test_db/load_salaries3.dump;
+
+source /opt/lampp/htdocs/test_db/show_elapsed.sql;
