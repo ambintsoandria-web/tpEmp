@@ -7,4 +7,4 @@
   - Logique de pagination et de recherche
   - Utilisation des classes CSS pour le design
   # Liste des fonctions : 
-  get_all_departments : recupere la liste des départements 
+    get_all_departments : recupere la liste des départements 
