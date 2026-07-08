@@ -7,4 +7,27 @@
   - Logique de pagination et de recherche
   - Utilisation des classes CSS pour le design
   # Liste des fonctions : 
-    get_all_departments : recupere la liste des départements 
+    - get_all_departments : recupere la liste des départements 
+    - get_all_lines : Exécute une requête SQL et récupère toutes les lignes
+    - get_one_line : Exécute une requête SQL et récupère la première ligne
+    - execute_query : Exécute une requête SQL de modification (INSERT, UPDATE)
+    - get_all_departments : Récupère la liste de tous les départements avec manager et nb employés
+    - get_one_department : Récupère l'ID et le nom d'un département précis
+    - add_department : Ajoute un département en base de données
+    - update_department : Modifie le nom d'un département existant
+    - get_departments_except : Liste tous les départements sauf un
+    - get_current_manager : Identifie le manager actuel d'un département
+    - make_manager : Clôture le mandat du manager actuel et nomme un nouvel employé
+    - remove_manager : Met fin au mandat du manager actuel sans le remplacer
+    - add_employee : Crée la fiche d'un nouvel employé
+    - update_employee : Modifie les informations personnelles d'un employé
+    - get_one_employee : Récupère la fiche complète d'un employé (infos, poste, salaire, dept)
+    - get_current_department : Trouve le département actuel d'un employé
+    - change_department : Transfère un employé dans un nouveau département
+    - get_employees_by_department : Liste les employés d'un département avec pagination
+    - count_employees_by_department : Compte le nombre total d'employés dans un département
+    - search_employees : Filtre les employés selon plusieurs critères (limite 200)
+    - get_longest_title : Trouve le poste occupé le plus longtemps par un employé
+    - get_salary_history : Récupère l'historique des salaires d'un employé
+    - get_title_history : Récupère l'historique des postes occupés par un employé
+    - get_jobs_stats : Génère un bilan par métier (total, salaire moyen, parité)"""
