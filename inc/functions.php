@@ -1,9 +1,10 @@
 <?php
 include_once 'connection.php';
 
-function get_all_lines($sql){
+function get_all_lines($sql)
+{
     //echo $sql;
-    $req = mysqli_query(dbconnect(),$sql );
+    $req = mysqli_query(dbconnect(), $sql);
     if (!$req) {
         die('Erreur SQL : ' . mysqli_error(dbconnect()));
     }
@@ -14,10 +15,18 @@ function get_all_lines($sql){
     mysqli_free_result($req);
     return $result;
 }
+function trierParOrdreAlphabetique($liste)
+{
+    usort($liste, function ($a, $b) {
+        return strcmp($a['dept_name'], $b['dept_name']);
+    });
+    return $liste;
+}
 
-function get_one_line($sql){
+function get_one_line($sql)
+{
 
-    $req = mysqli_query(dbconnect(),$sql );
+    $req = mysqli_query(dbconnect(), $sql);
     if (!$req) {
         die('Erreur SQL : ' . mysqli_error(dbconnect()));
     }
@@ -41,7 +50,7 @@ function get_all_departments()
                   AND dm.to_date = '9999-01-01'
             LEFT JOIN employees e
                    ON e.emp_no = dm.emp_no
-            ORDER BY d.dept_no";
+            ORDER BY d.dept_name, d.dept_no";
     return get_all_lines($sql);
 }
 
@@ -239,7 +248,7 @@ function count_employees_by_department($dept_no)
               AND de.to_date = '9999-01-01'";
     $sql = sprintf($sql, $dept_no);
     $line = get_one_line($sql);
-    return (int)$line['total'];
+    return (int) $line['total'];
 }
 
 function get_one_employee($emp_no)
