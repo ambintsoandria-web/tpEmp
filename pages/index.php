@@ -42,7 +42,7 @@ $departments = get_all_departments();
                     <th>Nombre d'employés</th>
                     <th>Action</th>
                 </tr>
-            </thead>
+            </thead>    
             <tbody>
             <?php foreach ($departments as $line) { ?>
             <tr>

@@ -27,18 +27,6 @@ Créer un document Markdown nommé `comprehension.md` (à la racine du dépôt) 
 - les **fonctions utilisées que vous ne connaissez pas** (ex. `urlencode`, `htmlspecialchars`, l'opérateur `??`…).
 
 
-## Comprehension du tp
-- les codes que j'ai compris : 
-  - Affichage des départements et employés depuis la base de données MySQL
-  - Structure HTML des tables et formulaires
-  - Navigation entre les différentes pages du projet
-  - Requêtes SQL simples pour la récupération des données
-  - Logique de pagination et de recherche
-  - Utilisation des classes CSS pour le design
-  - 
-
-
-
 ## 3. Design
 
 1. Ouvrir le dossier `design/` : il contient **3 thèmes** au choix
