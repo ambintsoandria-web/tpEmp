@@ -32,7 +32,7 @@ DROP TABLE IF EXISTS dept_emp,
                      dept_manager,
                      titles,
                      salaries, 
-                     employees, 
+                     employees,
                      departments;
 
 /*!50503 set default_storage_engine = InnoDB */;
